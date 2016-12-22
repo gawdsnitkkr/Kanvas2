@@ -1,0 +1,36 @@
+.outerslide {
+opacity:0;
+height:100%;
+width:100%;
+}
+#photographyContent {
+background: url('../images/31.jpg');
+}
+#webdesignContent {
+background: url('../images/32.jpg');
+}
+#captionContent {
+background: url('../images/33.jpg');
+}
+#designingContent {
+background: url('../images/34.jpg');
+}
+
+.content-close {
+	opacity: 0;
+	z-index: -1;
+	-webkit-transform: translate3d(0, 10px, 0) scale3d(0.8, 0.8, 1);
+	transform: translate3d(0, 10px, 0) scale3d(0.8, 0.8, 1);
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.content-open {
+	opacity: 1;
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition: opacity 1.5s, -webkit-transform 0.8s;
+	transition: opacity 1.5s, transform 0.8s;
+	-webkit-transition-delay: 1.3s;
+	transition-delay: 1.3s;
+}
